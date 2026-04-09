@@ -1,4 +1,4 @@
-const bici = [
+const biciclette = [
     {
     nome: "decathlonElops900",
     peso: 15
@@ -22,11 +22,16 @@ const bici = [
 ]
 
 
-let  Bici = pesoMinore[0];
+let  biciPiuLeggera = biciclette[0]; // 15 -> 9 -> 6
 
-for (let i = 1; i < bici.length; i++) {
-    if (pesoBici[i] < pesoMinore); 
-    pesoMinore < Bici;
+for (let i = 1; i < biciclette.length; i++) {
+    console.log('sono dentro il for, indice: ', i)
+    if (biciclette[i].peso < biciPiuLeggera.peso) {
+        console.log('sono dentro l\'if')
+        console.log('elemento corrente:', biciclette[i])
+        console.log('elemento memorizzato:', biciPiuLeggera)
+        biciPiuLeggera = biciclette[i];
+    }
 }
 
-console.log(pesoMinore);
+console.log(biciPiuLeggera);
